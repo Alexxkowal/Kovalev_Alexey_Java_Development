@@ -21,7 +21,7 @@ public class VacationPayCalculatorServiceImpl implements VacationPayCalculatorSe
 
     @Override
     public double calculateCompensation(double avgSalary, LocalDate startDate, LocalDate finishDate) {
-        long workDays = countWorkDaysService.countWorkDays(startDate, finishDate);
-        return avgSalary * workDays;
+        int workDays = countWorkDaysService.countWorkDays(startDate, finishDate);
+        return calculateCompensation(avgSalary, workDays);
     }
 }

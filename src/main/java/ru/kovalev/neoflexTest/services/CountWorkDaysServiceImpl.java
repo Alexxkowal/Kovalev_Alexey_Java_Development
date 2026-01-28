@@ -3,7 +3,6 @@ package ru.kovalev.neoflexTest.services;
 import org.springframework.stereotype.Service;
 import java.time.DayOfWeek;
 import java.time.LocalDate;
-import java.util.HashSet;
 import java.util.Set;
 
 @Service
